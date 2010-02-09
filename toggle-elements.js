@@ -85,12 +85,12 @@
 			if(theBrowser !== opts.targetBrowser){return;}
 		}
 
-		//make sure the parent element even exists on the page before going any further
+		//make sure the parent element even exists on the page before going any further. Parent expected to be an element id
 		opts.parentSelector = !!opts.parentSelector ? opts.parentSelector : "body";//if no parent selector specified, use body
 		var $parentElm = $(opts.parentSelector);
 		if($parentElm.length <= 0){return;}
 		
-		//build fullSelector, this helps people write more efficient jQuery selectors...
+		//build fullSelector (combine type & element selector. Type expected to be a class name.)
 		var fullSelector = "";
 		fullSelector += !!opts.elementType ? opts.elementType : "";
 		fullSelector += !!opts.elementSelector ? opts.elementSelector : "";
