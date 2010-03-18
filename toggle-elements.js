@@ -5,7 +5,7 @@
  *
  * This plugin will dynamically hide/show HTML elements on a page. Yes it is almost identical to
  * jQuery .toggle() and then defining methods to show hide. The difference is that with this plugin
- * you don't have to write the code yourself.
+ * you don't have to write the code yourself. here is an edit
  *
  * Also, you can use this to only toggle the display of elements within a certain x/y height/width area
  * on a page, or even an x/y height/width area as determined by an element currently displayed on the page.
